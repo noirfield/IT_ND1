@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Receptų knyga | Susisiekite</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/images/favicon/favicon-16x16.png">
+  <link rel="stylesheet" href="./static/styles.css" />
+</head>
+<script src="./js/main.js"></script>
+<body>
+  <div id="header"></div>
+  <main class="container">
+    <section class="hero">
+      <h2>Susisiekite su mumis</h2>
+      <p>Atsiųskite mums receptą arba atsiliepimą.</p>
+    </section>
+
+    <form class="form">
+      <label for="name">Jūsų vardas</label>
+      <input id="name" name="name" type="text" placeholder="pvz., Petras" required />
+
+      <label for="email">Elektroninio pašto adresas</label>
+      <input id="email" name="email" type="email" placeholder="pvz., petraspetraitis@gmail.com" required />
+
+      <label for="topic">Tema</label>
+      <select id="topic" name="topic">
+        <option>Recepto pasiūlymas</option>
+        <option>Atsiliepimas apie svetainę</option>
+        <option>Klausimas</option>
+      </select>
+
+      <label for="message">Žinutė</label>
+      <textarea id="message" name="message" placeholder="Parašykite savo žinutę..." required></textarea>
+
+      <button class="button-main" type="submit">Siųsti</button>
+    </form>
+
+    <div id="footer"></div>
+  </main>
+</body>
+</html>

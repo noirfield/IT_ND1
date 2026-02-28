@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f5f6f5;
+  color: #2c2c2c;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+.brand p {
+  margin: 0;
+  color: #666;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: #f0f0f0;
+}
+
+nav a.active {
+  background: #7a9e7e;
+  color: white;
+}
+
+.front {
+  background: #ffffff;
+  border: 1px solid #e3e6e3;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.front h2 {
+  margin-top: 0;
+}
+
+.front-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-top: 12px;
+  border: 1px solid #eaeaea;
+}
+
+.button {
+  display: inline-block;
+  background: #7a9e7e;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.button-main {
+  display: inline-block;
+  background: #7a9e7e;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 0.9;
+  background: #6a8e6e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e3e6e3;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  margin-right: 6px;
+  margin-top: 6px;
+}
+
+.list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.form {
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font: inherit;
+  background: #fff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.footer {
+  margin-top: 24px;
+  padding: 16px 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.recipe-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #eaeaea;
+  margin: 10px 0;
+}
+
+.main-text{
+  font-size: 48px;
+  font-weight: bold;
+
+  background: linear-gradient(
+    90deg,
+    #004d00,
+    #006600,
+    #009933,
+    #00cc44,
+    #00ff66,
+    #00cc44,
+    #009933,
+    #006600,
+    #004d00
+  );
+
+  background-size: 200% auto;
+  background-clip: text;
+  color:transparent;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*Norint pakeisti animacijos trukmę, pakeisk 3s į norimą reikšmę (pvz., 3s, 10s)*/
+  animation: smoothGreen 3s linear infinite;
+}
+
+@keyframes smoothGreen {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nav-links a.active {
+  background: #f2efe7;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: black;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+nav a.active {
+  background-color: #7a9e7e;
+  color: black;
+  font-weight: bold;
+}
+
+.site-footer {
+  background: #f5f6f5;
+  padding: 16px 0;
+  text-align: center;
+  color: #666;
+}
