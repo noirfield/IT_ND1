@@ -9,3 +9,10 @@ Nuoroda į projektą: https://github.com/noirfield/IT_ND1
 - Navbar
 - Form
 - Pavadinimas su animacija
+
+# Autorius (Authors)
+
+[Aivaras](https://github.com/noirfield)
+
+# Naudoti įrankiai
+- Visual Studio Code su Live Preview įskiepiu lengvai HTML peržiūrai
